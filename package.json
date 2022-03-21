@@ -1,0 +1,26 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "to generate readme file for a repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstackneo/readme-generator.git"
+  },
+  "keywords": [
+    "generate",
+    "readme"
+  ],
+  "author": "Neo Ji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fullstackneo/readme-generator/issues"
+  },
+  "homepage": "https://github.com/fullstackneo/readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.1"
+  }
+}
