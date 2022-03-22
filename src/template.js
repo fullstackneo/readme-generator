@@ -34,8 +34,6 @@ const generateRepoInfo = repoData => {
 
   ${generateBadge(license)}
 
----
-
   ## Description
   ${description}
 
@@ -70,8 +68,6 @@ const generateRepoInfo = repoData => {
   ## License
 
   ${generateLicense(license)}
-
-  ---
   `;
 };
 

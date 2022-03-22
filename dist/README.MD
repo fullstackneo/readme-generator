@@ -2,8 +2,6 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
----
-
   ## Description
   To generate readme file for user
 
@@ -37,11 +35,7 @@
 
   ## License
 
-  
   This project is licensed under the MIT license
-
-  ---
-  
   
   ## Questions:
 
