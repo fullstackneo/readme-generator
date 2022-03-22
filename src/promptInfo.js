@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
-//get the info from user
+
+//get the user info
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -30,6 +31,7 @@ const promptUser = () => {
     }
   ]);
 };
+// get the repo info 
 const promptRepoData = pageData => {
   {
     return inquirer
@@ -120,6 +122,7 @@ const promptRepoData = pageData => {
         }
       ])
       .then(repoData => {
+        // conbine user and repo info together into one obj
         pageData.repoData = repoData;
         return pageData;
       });

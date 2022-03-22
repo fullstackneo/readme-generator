@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+//generate badge of license
 const generateBadge = license => {
   switch (license) {
     case 'MIT':
@@ -15,6 +16,7 @@ const generateBadge = license => {
   }
 };
 
+// generate License section in README.MD
 const generateLicense = license => {
   if (license === 'None') {
     return `
@@ -25,6 +27,7 @@ const generateLicense = license => {
   }
 };
 
+// generate the repo content in README.MD 
 const generateRepoInfo = repoData => {
   const { title, description, installation, usage, contribution, test, license } = repoData;
   return `# ${title}
@@ -72,6 +75,7 @@ const generateRepoInfo = repoData => {
   `;
 };
 
+// generate questions section 
 const generateContacts = contacts => {
   const { github, email } = contacts;
   return `
@@ -81,6 +85,7 @@ const generateContacts = contacts => {
   `;
 };
 
+// export the function to generate the page template 
 module.exports = pageData => {
   const { repoData, ...contacts } = pageData;
   return `${generateRepoInfo(repoData)}
