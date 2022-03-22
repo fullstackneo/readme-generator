@@ -121,8 +121,6 @@ const promptRepoData = pageData => {
       ])
       .then(repoData => {
         pageData.repoData = repoData;
-        console.log(pageData);
-
         return pageData;
       });
   }
