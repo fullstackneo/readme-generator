@@ -43,7 +43,7 @@ const generateRepoInfo = repoData => {
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [License](#license)
-  - [Questions](#Questions)
+  - [Questions](#questions)
 
 
   ## Installation

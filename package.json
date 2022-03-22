@@ -11,9 +11,8 @@
     "url": "git+https://github.com/fullstackneo/readme-generator.git"
   },
   "keywords": [
-    "generate",
-    "readme"
-  ],
+    "generate readme",
+      ],
   "author": "Neo Ji",
   "license": "MIT",
   "bugs": {
