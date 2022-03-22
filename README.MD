@@ -8,7 +8,7 @@ To generate README.MD file for your repository
 
 ## Demo
 
-![image](https://github.com/fullstackneo/weather-dashboard/blob/main/assets/screenshots/screenshot.png)
+![image](https://github.com/fullstackneo/readme-generator/blob/main/assets/screenshots/screenshot.jpg)
 
 ## How-To Video
 
