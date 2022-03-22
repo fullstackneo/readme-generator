@@ -1,26 +1,52 @@
 const inquirer = require('inquirer');
 //get the info from user
-const promptRepoTitle = () => {
+const promptUser = () => {
   return inquirer.prompt([
     {
       type: 'input',
-      name: 'title',
-      message: `Project's Title:`,
-      validate: titleInput => {
-        if (titleInput) {
+      name: 'github',
+      message: 'Your Github Username:',
+      validate: githubInput => {
+        if (githubInput) {
           return true;
         } else {
-          console.log('please enter the title of this project!');
+          console.log('please enter your github username!');
+          return false;
+        }
+      }
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Your Email:',
+      validate: githubInput => {
+        if (githubInput) {
+          return true;
+        } else {
+          console.log('please enter your email address!');
           return false;
         }
       }
     }
   ]);
 };
-const promptRepoData = repoData => {
+const promptRepoData = pageData => {
   {
     return inquirer
       .prompt([
+        {
+          type: 'input',
+          name: 'title',
+          message: `Project's Title:`,
+          validate: titleInput => {
+            if (titleInput) {
+              return true;
+            } else {
+              console.log('please enter the title of this project!');
+              return false;
+            }
+          }
+        },
         {
           type: 'input',
           name: 'description',
@@ -35,9 +61,15 @@ const promptRepoData = repoData => {
           }
         },
         {
+          type: 'list',
+          name: 'license',
+          message: 'License:',
+          choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'None']
+        },
+        {
           type: 'input',
           name: 'installation',
-          message: `Installation Instruction:`,
+          message: `Installation Command:`,
           validate: installationInput => {
             if (installationInput) {
               return true;
@@ -49,8 +81,21 @@ const promptRepoData = repoData => {
         },
         {
           type: 'input',
+          name: 'test',
+          message: `Testing Command:`,
+          validate: testInput => {
+            if (testInput) {
+              return true;
+            } else {
+              console.log('please enter testing command!');
+              return false;
+            }
+          }
+        },
+        {
+          type: 'input',
           name: 'usage',
-          message: `Usage Information:`,
+          message: `About Using the Repo:`,
           validate: usageInput => {
             if (usageInput) {
               return true;
@@ -63,7 +108,7 @@ const promptRepoData = repoData => {
         {
           type: 'input',
           name: 'contribution',
-          message: `Contribution Guidline:`,
+          message: `About Contributing to the Repo:`,
           validate: contributionInput => {
             if (contributionInput) {
               return true;
@@ -72,73 +117,15 @@ const promptRepoData = repoData => {
               return false;
             }
           }
-        },
-        {
-          type: 'input',
-          name: 'test',
-          message: `Test Instruction:`,
-          validate: testInput => {
-            if (testInput) {
-              return true;
-            } else {
-              console.log('please enter ontribution guidline!');
-              return false;
-            }
-          }
-        },
-        {
-          type: 'checkbox',
-          name: 'license',
-          message: 'License:',
-          choices: ['MIT', 'MIT', 'MIT']
         }
       ])
-      .then(introData => {
-        repoData.repoInfo = introData;
-        return repoData;
+      .then(repoData => {
+        pageData.repoData = repoData;
+        console.log(pageData);
+
+        return pageData;
       });
   }
 };
 
-const promptContact = repoData => {
-  return inquirer
-    .prompt([
-      {
-        type: 'input',
-        name: 'github',
-        message: 'Your Github Username:',
-        validate: githubInput => {
-          if (githubInput) {
-            return true;
-          } else {
-            console.log('please enter your github username!');
-            return false;
-          }
-        }
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: 'Your Email:',
-        validate: githubInput => {
-          if (githubInput) {
-            return true;
-          } else {
-            console.log('please enter your email address!');
-            return false;
-          }
-        }
-      }
-    ])
-    .then(contactData => {
-      repoData.contacts = contactData;
-      console.log(repoData);
-      return repoData;
-    });
-};
-
-const getRepo = () => promptRepoTitle().then(promptRepoData).then(promptContact);
-
-module.exports = {
-  getRepo
-};
+module.exports = () => promptUser().then(promptRepoData);
