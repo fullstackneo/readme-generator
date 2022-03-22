@@ -1,7 +1,5 @@
 # Readme Generator
 
----
-
 ## Description
 
 To generate README.MD file for your repository
@@ -23,12 +21,6 @@ https://drive.google.com/file/d/12DH--YV1bwFxQbQh2DetCTLTjHTXLawO/preview
 
 - node.js
 - inquirer package
-
-## License
-
-This project is licensed under the MIT license
-
----
 
 ## Contribution
 
