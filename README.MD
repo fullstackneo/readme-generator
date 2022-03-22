@@ -6,9 +6,14 @@
 
 To generate README.MD file for your repository
 
-## Demo
+## Easy Step
 
 ![image](https://github.com/fullstackneo/readme-generator/blob/main/assets/screenshots/screenshot.jpg)
+
+## Demo Sample
+
+![image](https://github.com/fullstackneo/readme-generator/blob/main/assets/screenshots/screenshot2.jpg)
+![image](https://github.com/fullstackneo/readme-generator/blob/main/assets/screenshots/screenshot3.jpg)
 
 ## How-To Video
 
