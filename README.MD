@@ -1,50 +1,34 @@
-# readme-generator
-
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Readme Generator
 
 ---
 
-  ## Description
-  To generate readme file
+## Description
 
-  ## Table of Contents
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [License](#license)
-  - [Questions](#questions)
+To generate README.MD file for your repository
 
+## Demo
 
-  ## Installation
-  To install necssary dependencies, run the following command:
-  ```
-  npm i readme
-  ```
+![image](https://github.com/fullstackneo/weather-dashboard/blob/main/assets/screenshots/screenshot.png)
 
-  ## Usage
-  anyone can use
-  
-  ## Contributing
-  anyone can contribute
+## How-To Video
 
-  ## Tests
+https://drive.google.com/file/d/12DH--YV1bwFxQbQh2DetCTLTjHTXLawO/preview
 
-  ```
-  npm test readme
-  ```
+## Skills
 
-  ## License
+- node.js
+- inquirer package
 
-  
-  This project is licensed under the MIT license
+## License
 
-  ---
-  
-  
-  ## Questions:
+This project is licensed under the MIT license
 
-  Please feel free to follow me on [github](https://github.com/neo-ji) or send me your questions to fullstackneo@gmail.com
-  
-    
+---
+
+## Contribution
+
+Made with ❤️ by [Neo Ji]
+
+## Questions:
+
+Please feel free to follow me on [github](https://github.com/fullstackneo) or send me your questions tofullstackneo@gmail.com
